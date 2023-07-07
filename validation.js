@@ -19,10 +19,8 @@ app.post('/user', (req, res) => {
   if (error) {
     res.status(400).send(error.details[0].message);
     return;
-  }else{
-
   }
-//   console.log(`name:  ${req.body.name}`);
+
 const showdata ={
     name :req.body.name,
     email: req.body.email, 
@@ -30,6 +28,7 @@ const showdata ={
     Emp_ID: req.body.Emp_ID
     
 };
+
 res.send(`The new user created name: ${showdata.name}`);
 
 
