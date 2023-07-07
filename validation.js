@@ -5,7 +5,7 @@ const port = 3001;
 
 app.use(express.json());
 
-app.post('/users', (req, res) => {
+app.post('/user', (req, res) => {
   const schema = Joi.object({
     name: Joi.string().required(),
     email: Joi.string().email().required(),
@@ -23,11 +23,16 @@ app.post('/users', (req, res) => {
 
   }
 //   console.log(`name:  ${req.body.name}`);
-res.send(`The new user created
-name :${req.body.name},
-email: ${req.body.email}, 
-mobile_no: ${req.body.mobile_no}, 
-Emp_ID: ${req.body.Emp_ID}`);
+const showdata ={
+    name :req.body.name,
+    email: req.body.email, 
+    mobile_no:req.body.mobile_no, 
+    Emp_ID: req.body.Emp_ID
+    
+};
+res.send(`The new user created name: ${showdata.name}`);
+
+
 //   res.send('New user has been created. name: ${req.body.name} ');
   
 
