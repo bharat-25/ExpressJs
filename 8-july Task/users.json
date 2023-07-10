@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "email": "abc@gmail.com",
+    "password": "abcdef",
+    "firstName": "aditya",
+    "lastName": "Anand",
+    "gender": "male",
+    "dob": "23-08-2000"
+  },
+  {
+    "id": 2,
+    "email": "aditya@gmail.com",
+    "password": "qwertyu",
+    "firstName": "bharat",
+    "lastName": "Anand",
+    "gender": "male",
+    "dob": "23-08-2000"
+  },
+  {
+    "id": 3,
+    "email": "dtat@gmail.com",
+    "password": "qwertyu",
+    "firstName": "bharat",
+    "lastName": "Anand",
+    "gender": "male",
+    "dob": "23-08-2000"
+  }
+]
